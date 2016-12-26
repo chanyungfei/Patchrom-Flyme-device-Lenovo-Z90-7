@@ -422,3 +422,82 @@
 
     goto :goto_0
 .end method
+
+.method public constructor <init>(Landroid/telecom/PhoneAccountHandle;IILjava/util/List;)V
+    .locals 7
+    .param p1, "phoneAccount"    # Landroid/telecom/PhoneAccountHandle;
+    .param p2, "state"    # I
+    .param p3, "connectionCapabilities"    # I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/telecom/PhoneAccountHandle;",
+            "II",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .local p4, "connectionIds":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move-object v4, p4
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    invoke-direct/range {v0 .. v6}, Landroid/telecom/ParcelableConference;-><init>(Landroid/telecom/PhoneAccountHandle;IILjava/util/List;Lcom/android/internal/telecom/IVideoProvider;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/telecom/PhoneAccountHandle;IILjava/util/List;J)V
+    .locals 9
+    .param p1, "phoneAccount"    # Landroid/telecom/PhoneAccountHandle;
+    .param p2, "state"    # I
+    .param p3, "connectionCapabilities"    # I
+    .param p5, "connectTimeMillis"    # J
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/telecom/PhoneAccountHandle;",
+            "II",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;J)V"
+        }
+    .end annotation
+
+    .prologue
+    .local p4, "connectionIds":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move-object v4, p4
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-wide v7, p5
+
+    invoke-direct/range {v0 .. v8}, Landroid/telecom/ParcelableConference;-><init>(Landroid/telecom/PhoneAccountHandle;IILjava/util/List;Lcom/android/internal/telecom/IVideoProvider;IJ)V
+
+    return-void
+.end method
