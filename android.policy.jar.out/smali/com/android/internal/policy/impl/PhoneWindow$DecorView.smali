@@ -2500,6 +2500,18 @@
 
     .restart local v2    # "handled":Z
     :goto_2
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/impl/PhoneWindow$FlymeInjector;->flymeDispatchKeyEvent(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/KeyEvent;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_flyme_0
+
+    const/4 v5, 0x1
+
+    return v5
+
+    :cond_flyme_0
+
     sget-boolean v5, Landroid/view/ViewRootImpl;->mDebugEvent:Z
 
     if-eqz v5, :cond_3

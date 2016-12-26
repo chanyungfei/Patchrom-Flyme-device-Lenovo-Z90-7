@@ -5969,6 +5969,8 @@
 
     .end local v17    # "e":Landroid/os/RemoteException;
     :cond_25
+    invoke-static/range {v35 .. v35}, Lcom/android/server/am/BroadcastQueue$FlymeBroadcastQueueInjector;->setCurrentBroadcastRecord(Lcom/android/server/am/BroadcastRecord;)V
+
     const/16 v24, 0x1
 
     .local v24, "isGranted":Z

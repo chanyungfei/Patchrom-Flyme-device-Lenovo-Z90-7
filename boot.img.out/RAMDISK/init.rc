@@ -851,3 +851,18 @@ service iwpriv /system/bin/iwpriv_cmd
 #Lenovo-sw chencheng6 for iwpriv command add 2015-04-27 end
 #[lenovo_fw,hurui1],end
 
+service smbd /system/bin/smbd -D
+    user root
+    group bluetooth net_bt_admin
+    disabled
+    oneshot
+
+service nmbd /system/bin/nmbd -D
+    user root
+    group bluetooth net_bt_admin
+    disabled
+    oneshot
+
+service flymed /system/bin/flymed
+    class main
+    socket flymed stream 0660 root system

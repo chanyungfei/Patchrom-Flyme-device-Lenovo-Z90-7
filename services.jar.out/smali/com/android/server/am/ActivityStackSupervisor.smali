@@ -12637,6 +12637,23 @@
 
     .line 954
     .local v31, "aInfo":Landroid/content/pm/ActivityInfo;
+    move/from16 v0, p2
+
+    move-object/from16 v1, p3
+
+    move-object/from16 v4, v31
+
+    invoke-static {v0, v1, v4}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->checkFlymePermission(ILjava/lang/String;Landroid/content/pm/ActivityInfo;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_flyme_0
     if-eqz v31, :cond_5
 
     move-object/from16 v0, v31

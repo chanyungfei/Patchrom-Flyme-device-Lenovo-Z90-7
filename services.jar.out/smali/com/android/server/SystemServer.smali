@@ -1846,7 +1846,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    new-instance v75, Lcom/android/server/InputMethodManagerService;
+    new-instance v75, Lcom/android/server/MzInputMethodManagerService;
 
     move-object/from16 v0, v75
 
@@ -3211,6 +3211,9 @@
     invoke-virtual {v4, v5}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/Class;)Lcom/android/server/SystemService;
 
     :cond_1d
+
+    goto/16 :goto_flyme_0
+
     if-nez v68, :cond_1e
 
     if-nez v62, :cond_1e
@@ -3248,6 +3251,7 @@
     .end local v42    # "atlas":Lcom/android/server/AssetAtlasService;
     .restart local v41    # "atlas":Lcom/android/server/AssetAtlasService;
     :cond_1e
+    :goto_flyme_0
     :goto_27
     move-object/from16 v0, p0
 
@@ -3689,6 +3693,14 @@
     check-cast v87, Lcom/android/server/MmsServiceBroker;
 
     .restart local v87    # "mmsService":Lcom/android/server/MmsServiceBroker;
+    move-object/from16 v0, p0
+
+    move-object/from16 v4, v117
+
+    move-object/from16 v5, v111
+
+    invoke-static {v0, v4, v5}, Lcom/android/server/SystemServer$FlymeInjector;->addFlymeServices(Lcom/android/server/SystemServer;Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wallpaper/WallpaperManagerService;)V
+
     :try_start_43
     invoke-virtual/range {v108 .. v108}, Lcom/android/server/VibratorService;->systemReady()V
     :try_end_43

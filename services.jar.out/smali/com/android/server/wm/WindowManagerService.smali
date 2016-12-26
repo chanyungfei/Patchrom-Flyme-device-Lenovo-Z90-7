@@ -14683,6 +14683,8 @@
 
     invoke-virtual {p0, v1}, Lcom/android/server/wm/WindowManagerService;->haltActivityResuming(Z)V
 
+    invoke-static {p0, v2}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->adjustOnOrientationChanged(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;)V
+
     goto/16 :goto_0
 
     .restart local v11    # "ws":Lcom/android/server/wm/WindowState;

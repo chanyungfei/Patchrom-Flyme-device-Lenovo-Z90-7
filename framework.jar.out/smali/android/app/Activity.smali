@@ -410,6 +410,10 @@
 
     iput-boolean v1, p0, Landroid/app/Activity;->mInitialized:Z
 
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/app/Activity;->mIsFlymeActivityFirstStart:Z
+
     return-void
 .end method
 
@@ -5104,7 +5108,7 @@
 
     .end local v0    # "wm":Landroid/view/ViewManager;
     :cond_0
-    invoke-direct {p0}, Landroid/app/Activity;->hookMakeVisibleForTintAndIconTheme()V
+    invoke-static/range {p0 .. p0}, Landroid/app/Activity$FlymeInjector;->onStart(Landroid/app/Activity;)V
 
     iget-object v1, p0, Landroid/app/Activity;->mDecor:Landroid/view/View;
 
