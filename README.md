@@ -1,0 +1,1 @@
+Base on Android 5.1.1 For Lenovo VIBE Shot (Z90-7).
