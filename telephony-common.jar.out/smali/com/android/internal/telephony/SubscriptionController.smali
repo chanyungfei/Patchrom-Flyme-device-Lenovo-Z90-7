@@ -1398,15 +1398,17 @@
 
     move-object/from16 v0, p1
 
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    #invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
-    move-result v1
+    #move-result v1
 
     move-object/from16 v0, p1
 
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+    #invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v15
+    #move-result v15
+
+    const/4 v15, 0x1
 
     .line 474
     .local v15, "status":I
@@ -1414,15 +1416,17 @@
 
     move-object/from16 v0, p1
 
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    #invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
-    move-result v1
+    #move-result v1
 
     move-object/from16 v0, p1
 
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+    #invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v16
+    #move-result v16
+
+    const/16 v16, -0x1
 
     .line 478
     .local v16, "nwMode":I
@@ -9633,6 +9637,8 @@
     .param p2, "nwMode"    # I
 
     .prologue
+    return-void
+
     .line 1882
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -9972,6 +9978,8 @@
     invoke-virtual {v3}, Lcom/android/internal/telephony/ModemStackController;->isStackReady()Z
 
     move-result v3
+
+    const/4 v3, 0x0
 
     if-eqz v3, :cond_0
 
