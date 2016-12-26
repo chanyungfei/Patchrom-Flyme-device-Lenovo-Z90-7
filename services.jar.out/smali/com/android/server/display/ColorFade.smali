@@ -1463,8 +1463,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 225
-    const v3, 0x1100004
+    const v3, #android:raw@color_fade_vert#t
 
     const v4, 0x8b31
 
@@ -1474,7 +1473,7 @@
 
     .line 227
     .local v1, "vshader":I
-    const v3, 0x1100003
+    const v3, #android:raw@color_fade_frag#t
 
     const v4, 0x8b30
 

@@ -3748,7 +3748,7 @@
 
     move-result-object v6
 
-    const v7, 0x107003d
+    const v7, #android:array@config_gpsParameters#t
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

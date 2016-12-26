@@ -158,7 +158,7 @@
 
     .line 929
     .local v3, "r":Landroid/content/res/Resources;
-    const v5, 0x1120094
+    const v5, #android:bool@config_sms_force_7bit_encoding#t
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -2316,26 +2316,22 @@
     :goto_0
     iput-boolean v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mReplyPathPresent:Z
 
-    .line 1194
     invoke-virtual {p1}, Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->getByte()I
 
     move-result v4
 
     iput v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mMessageRef:I
 
-    .line 1196
     invoke-virtual {p1}, Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->getAddress()Lcom/android/internal/telephony/gsm/GsmSmsAddress;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/SmsAddress;
 
-    .line 1198
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/SmsAddress;
 
     if-eqz v4, :cond_0
 
-    .line 1199
     const-string v4, "SmsMessage"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -2827,7 +2823,7 @@
 
     .line 1278
     .local v7, "r":Landroid/content/res/Resources;
-    const v9, 0x112008f
+    const v9, #android:bool@config_sms_decode_gsm_8bit_data#t
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -3363,7 +3359,7 @@
 
     .line 1442
     .restart local v7    # "r":Landroid/content/res/Resources;
-    const v9, 0x112008f
+    const v9, #android:bool@config_sms_decode_gsm_8bit_data#t
 
     invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -3912,4 +3908,15 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method private mzSetDestinationAddress()V
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/gsm/GsmSmsAddress;
+
+    iput-object v0, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->destinationAddress:Lcom/android/internal/telephony/SmsAddress;
+
+    return-void
 .end method

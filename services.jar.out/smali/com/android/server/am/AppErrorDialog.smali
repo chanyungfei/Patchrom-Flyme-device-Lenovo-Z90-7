@@ -92,8 +92,7 @@
     .local v1, "name":Ljava/lang/CharSequence;
     if-eqz v1, :cond_1
 
-    .line 65
-    const v3, 0x10404b6
+    const v3, #android:string@aerr_application#t
 
     new-array v4, v9, [Ljava/lang/Object;
 
@@ -122,7 +121,7 @@
     .line 90
     const/4 v3, -0x2
 
-    const v4, 0x10404bd
+    const v4, #android:string@force_close#t
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -136,13 +135,11 @@
 
     invoke-virtual {p0, v3, v4, v5}, Lcom/android/server/am/AppErrorDialog;->setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
 
-    .line 94
     iget-object v3, p4, Lcom/android/server/am/ProcessRecord;->errorReportReceiver:Landroid/content/ComponentName;
 
     if-eqz v3, :cond_2
 
-    .line 95
-    const v3, 0x10404be
+    const v3, #android:string@report#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -158,7 +155,7 @@
 
     .line 106
     :goto_1
-    const v3, 0x10404b5
+    const v3, #android:string@aerr_title#t
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -254,7 +251,7 @@
 
     .line 70
     .restart local v1    # "name":Ljava/lang/CharSequence;
-    const v3, 0x10404b7
+    const v3, #android:string@aerr_process#t
 
     new-array v4, v7, [Ljava/lang/Object;
 

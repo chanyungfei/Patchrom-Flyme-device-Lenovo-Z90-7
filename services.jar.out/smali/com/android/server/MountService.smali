@@ -746,7 +746,7 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x1080027
+    const v2, #android:drawable@ic_dialog_alert#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
 
@@ -758,19 +758,19 @@
 
     move-result-object v1
 
-    const v2, 0x10406eb
+    const v2, #android:string@notify_sd_remove_title#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x10406ec
+    const v2, #android:string@notify_sd_remove_text#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x10406ed
+    const v2, #android:string@sd_reboot#t
 
     new-instance v3, Lcom/android/server/MountService$8;
 
@@ -4293,15 +4293,12 @@
 
     move-result-object v26
 
-    .line 1524
     .local v26, "resources":Landroid/content/res/Resources;
-    const v19, 0x1110016
+    const v19, #android:xml@storage_list_extra#t
 
-    .line 1525
     .local v19, "id":I
-    const v20, 0x1110017
+    const v20, #android:xml@storage_list_extra_fuse#t
 
-    .line 1526
     .local v20, "id_extra":I
     const-string v3, "persist.sys.emmc"
 
@@ -5252,7 +5249,7 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x1080027
+    const v2, #android:drawable@ic_dialog_alert#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
 
@@ -5264,19 +5261,19 @@
 
     move-result-object v1
 
-    const v2, 0x10406ee
+    const v2, #android:string@switch_storage_nosd_warning_title#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x10406ef
+    const v2, #android:string@switch_storage_nosd_warning_body#t
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x104000a
+    const v2, #android:string@ok#t
 
     const/4 v3, 0x0
 

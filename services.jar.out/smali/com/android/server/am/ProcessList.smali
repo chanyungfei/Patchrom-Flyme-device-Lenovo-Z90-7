@@ -1644,7 +1644,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e0009
+    const v20, #android:integer@config_lowMemoryKillerMinFreeKbytesAdjust#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1656,7 +1656,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e0008
+    const v20, #android:integer@config_lowMemoryKillerMinFreeKbytesAbsolute#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2118,7 +2118,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e000b
+    const v20, #android:integer@config_extraFreeKbytesAdjust#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2130,7 +2130,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e000a
+    const v20, #android:integer@config_extraFreeKbytesAbsolute#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 

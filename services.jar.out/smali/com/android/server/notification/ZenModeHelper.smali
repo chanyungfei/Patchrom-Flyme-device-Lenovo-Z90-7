@@ -1399,7 +1399,7 @@
 
     .line 111
     .local v2, "parser":Landroid/content/res/XmlResourceParser;
-    const v3, 0x1110003
+    const v3, #android:xml@default_zen_mode_config#t
 
     :try_start_0
     invoke-virtual {p0, v3}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
@@ -2999,7 +2999,7 @@
 
     move-result-object v6
 
-    const v7, 0x11200a2
+    const v7, #android:bool@config_setZenModeWhenSilentModeOn#t
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getBoolean(I)Z
 

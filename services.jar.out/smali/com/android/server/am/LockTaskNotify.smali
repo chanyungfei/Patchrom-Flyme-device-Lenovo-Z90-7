@@ -109,7 +109,7 @@
 
     if-eqz p1, :cond_2
 
-    const v1, 0x10406c3
+    const v1, #android:string@lock_to_app_toast_locked#t
 
     :goto_0
     invoke-virtual {v2, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -131,7 +131,7 @@
     .line 55
     iget-object v1, p0, Lcom/android/server/am/LockTaskNotify;->mContext:Landroid/content/Context;
 
-    const v2, 0x10406c0
+    const v2, #android:string@lock_to_app_toast_accessible#t
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -162,7 +162,7 @@
     .line 52
     .end local v0    # "text":Ljava/lang/String;
     :cond_2
-    const v1, 0x10406bf
+    const v1, #android:string@lock_to_app_toast#t
 
     goto :goto_0
 .end method
@@ -172,17 +172,13 @@
     .param p1, "starting"    # Z
 
     .prologue
-    .line 64
-    const v0, 0x10406c5
+    const v0, #android:string@lock_to_app_exit#t
 
-    .line 65
     .local v0, "showString":I
     if-eqz p1, :cond_0
 
-    .line 66
-    const v0, 0x10406c4
+    const v0, #android:string@lock_to_app_start#t
 
-    .line 68
     :cond_0
     iget-object v1, p0, Lcom/android/server/am/LockTaskNotify;->mContext:Landroid/content/Context;
 

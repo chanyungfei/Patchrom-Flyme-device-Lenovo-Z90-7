@@ -987,7 +987,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120053
+    const v1, #android:bool@config_voice_capable#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1108,7 +1108,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0004
+    const v1, #android:integer@config_soundEffectVolumeDb#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1160,7 +1160,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120076
+    const v1, #android:bool@config_camera_sound_forced#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1237,7 +1237,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0076
+    const v1, #android:integer@config_safe_media_volume_index#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1254,7 +1254,7 @@
 
     move-result-object v0
 
-    const v1, 0x112007b
+    const v1, #android:bool@config_useFixedVolume#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1267,7 +1267,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120014
+    const v1, #android:bool@config_useMasterVolume#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1280,7 +1280,7 @@
 
     move-result-object v0
 
-    const v1, 0x107000c
+    const v1, #android:array@config_masterVolumeRamp#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -3707,10 +3707,8 @@
 
     if-eq v6, v4, :cond_0
 
-    .line 1065
     and-int/lit8 p3, p3, -0x5
 
-    .line 1069
     :cond_0
     iget-object v0, p0, Landroid/media/AudioService;->mVolumeController:Landroid/media/AudioService$VolumeController;
 
@@ -3775,6 +3773,7 @@
     or-int/lit8 p3, p3, 0x2
 
     :cond_2
+    :goto_flyme_0
     move-object v0, p0
 
     move v2, p1
@@ -6706,7 +6705,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120076
+    const v1, #android:bool@config_camera_sound_forced#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -7698,7 +7697,7 @@
 
     move-result-object v11
 
-    const v12, 0x1110001
+    const v12, #android:xml@audio_assets#t
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
@@ -8526,7 +8525,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e0076
+    const v2, #android:integer@config_safe_media_volume_index#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -8553,7 +8552,7 @@
 
     move-result-object v1
 
-    const v2, 0x1120074
+    const v2, #android:bool@config_safe_media_volume_enabled#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 

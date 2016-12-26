@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    const v1, 0x1120073
+    const v1, #android:bool@config_useDevInputEventForAudioJack#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1879,7 +1879,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0059
+    const v1, #android:integer@config_virtualKeyQuietTimeMillis#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2053,7 +2053,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x104053d
+    const v2, #android:string@select_keyboard_layout_notification_title#t
 
     sget-object v3, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
@@ -2888,7 +2888,7 @@
     .prologue
     const/4 v4, 0x0
 
-    const v9, 0x104053d
+    const v9, #android:string@select_keyboard_layout_notification_title#t
 
     const/4 v1, 0x0
 
@@ -2958,7 +2958,7 @@
 
     move-result-object v0
 
-    const v1, 0x104053e
+    const v1, #android:string@select_keyboard_layout_notification_message#t
 
     invoke-virtual {v8, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2972,7 +2972,7 @@
 
     move-result-object v0
 
-    const v1, 0x108043a
+    const v1, #android:drawable@ic_settings_language#t
 
     invoke-virtual {v0, v1}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -2990,7 +2990,7 @@
 
     move-result-object v1
 
-    const v3, 0x1060059
+    const v3, #android:color@system_notification_accent_color#t
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 

@@ -163,7 +163,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e0068
+    const v2, #android:integer@config_ntpPollingInterval#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -180,7 +180,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e0069
+    const v2, #android:integer@config_ntpPollingIntervalShorter#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -197,7 +197,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e006a
+    const v2, #android:integer@config_ntpRetry#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -212,7 +212,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e006b
+    const v2, #android:integer@config_ntpThreshold#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 

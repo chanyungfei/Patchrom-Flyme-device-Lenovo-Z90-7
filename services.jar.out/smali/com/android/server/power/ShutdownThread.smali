@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/power/ShutdownThread$FlymeInjector;,
         Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
     }
 .end annotation
@@ -508,7 +509,7 @@
 
     move-result-object v5
 
-    const v6, 0x1120053
+    const v6, #android:bool@config_voice_capable#t
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1640,7 +1641,7 @@
 
     move-result-object v19
 
-    const v20, 0x1070039
+    const v20, #android:array@config_globalActionsList#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1755,7 +1756,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e0040
+    const v20, #android:integer@config_longPressOnPowerBehavior#t
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1767,7 +1768,7 @@
 
     if-eqz v19, :cond_6
 
-    const v17, 0x1040129
+    const v17, #android:string@reboot_safemode_confirm#t
 
     .line 254
     .local v17, "resourceId":I
@@ -1881,7 +1882,7 @@
 
     if-eqz v19, :cond_9
 
-    const v19, 0x1040128
+    const v19, #android:string@reboot_safemode_title#t
 
     :goto_5
     move-object/from16 v0, v20
@@ -1916,7 +1917,7 @@
 
     move-result-object v19
 
-    const v20, 0x1040013
+    const v20, #android:string@yes#t
 
     new-instance v21, Lcom/android/server/power/ShutdownThread$2;
 
@@ -1930,7 +1931,7 @@
 
     move-result-object v19
 
-    const v20, 0x1040009
+    const v20, #android:string@no#t
 
     new-instance v21, Lcom/android/server/power/ShutdownThread$1;
 
@@ -2039,7 +2040,7 @@
 
     if-ne v15, v0, :cond_7
 
-    const v17, 0x1040127
+    const v17, #android:string@shutdown_confirm_question#t
 
     goto/16 :goto_4
 
@@ -2051,7 +2052,7 @@
     goto/16 :goto_4
 
     :cond_8
-    const v17, 0x1040126
+    const v17, #android:string@shutdown_confirm#t
 
     goto/16 :goto_4
 
@@ -2061,7 +2062,7 @@
     .restart local v10    # "e":Ljava/lang/RuntimeException;
     .restart local v17    # "resourceId":I
     :cond_9
-    const v19, 0x1040092
+    const v19, #android:string@power_off#t
 
     goto/16 :goto_5
 
@@ -2108,7 +2109,7 @@
 
     move-result-object v19
 
-    const v20, 0x104000a
+    const v20, #android:string@ok#t
 
     new-instance v21, Lcom/android/server/power/ShutdownThread$4;
 
@@ -2122,7 +2123,7 @@
 
     move-result-object v19
 
-    const/high16 v20, 0x1040000
+    const/high16 v20, #android:string@cancel#i
 
     new-instance v21, Lcom/android/server/power/ShutdownThread$3;
 

@@ -1681,39 +1681,31 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 850
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 772
     :cond_1
-    const v0, 0x108067f
+    const v0, #android:drawable@stat_sys_data_usb#t
 
-    .line 773
     .local v0, "iconId":I
-    const v9, 0x10406e2
+    const v9, #android:string@usb_picker_notification_title#t
 
-    .line 774
     .local v9, "titleId":I
-    const v3, 0x10406e3
+    const v3, #android:string@usb_picker_notification_message#t
 
-    .line 775
     .local v3, "messageId":I
     move v5, v9
 
-    .line 777
     .local v5, "notificationId":I
     if-eqz p1, :cond_2
 
-    .line 778
     :try_start_1
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 784
     .local v1, "intent":Landroid/content/Intent;
     new-instance v11, Landroid/content/ComponentName;
 
@@ -2798,7 +2790,7 @@
 
     move-result-object v17
 
-    const/high16 v18, 0x1120000
+    const/high16 v18, #android:bool@always_popup_usb_computer_connection_option#i
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getBoolean(I)Z
 
