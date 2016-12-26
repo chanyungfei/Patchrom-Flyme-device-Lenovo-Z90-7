@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<perf-restrictions>
+    <thermalctr-pkg>
+        <pkg name="com.antutu"/>
+        <pkg name="com.aurorasoftworks.quadrant"/>
+        <pkg name="com.lenovo.scg"/>
+        <pkg name="ca.primatelabs"/>
+        <pkg name="com.ludashi"/>
+        <pkg name="com.cpuid.cpu_z"/>
+    </thermalctr-pkg>
+    <cpu-pkglist>
+        <pkg name="com.tencent.mm" maxfreq="1344000" minfreq="1113600"/>
+        <pkg name="com.sina.weibo" maxfreq="960000" minfreq="998400"/>
+        <pkg name="com.lenovo.browser" maxfreq="960000" minfreq="998400"/>
+        <pkg name="org.cocos2d.fishingjoy3" maxfreq="800000" minfreq="998400"/>
+        <pkg name="com.lenovo.email" maxfreq="800000" minfreq="998400"/>
+        <pkg name="com.imangi.templerun2" maxfreq="800000" minfreq="998400"/>
+        <pkg name="com.tencent.mobileqq" maxfreq="1344000" minfreq="1113600"/>
+        <pkg name="com.skygame3.sh_uc_android.uc" maxfreq="800000" minfreq="998400"/>
+        <pkg name="com.autonavi.minimap" maxfreq="960000" minfreq="998400"/>
+        <pkg name="com.autonavi.xmgd.navigator" maxfreq="960000" minfreq="998400"/>
+        <pkg name="com.baidu.BaiduMap" maxfreq="960000" minfreq="998400"/>
+    </cpu-pkglist>
+    <gpu-pkglist>
+        <pkg name="com.happyelements.AndroidAnimal" freq="1"/>
+        <pkg name="com.skygame3.sh_uc_android.uc" freq="1"/>
+        <pkg name="com.autonavi.minimap" freq="1"/>
+        <pkg name="com.baidu.BaiduMap," freq="1"/>
+        <pkg name="com.autonavi.xmgd.navigator" freq="1"/>
+    </gpu-pkglist>
+    <lcd-pkglist>
+        <pkg name="com.skygame3.sh_uc_android.uc" current="120"/>
+    </lcd-pkglist>
+    <charging-pkglist>
+        <pkg name="com.skygame3.sh_uc_android.uc" current="1500000"/>
+    </charging-pkglist>
+    <fps-pkglist>
+        <pkg name="com.imangi.templerun2" fps="45"/>
+        <pkg name="com.iyd.reader.ReadingJoy" fps="45"/>
+        <pkg name="com.baidu.BaiduMap" fps="45"/>
+        <pkg name="com.chaozh.iReaderFree" fps="45"/>
+        <pkg name="com.carrot.carrotfantasy" fps="45"/>
+        <pkg name="com.mykj.game.ddz" fps="45"/>
+        <pkg name="com.happyelements.AndroidAnimal" fps="45"/>
+        <pkg name="com.lenovo.browser" fps="55"/>
+        <pkg name="com.lenovo.video" fps="55"/>
+        <pkg name="com.tencent.mm" fps="55"/>
+        <pkg name="com.sina.weibo" fps="55"/>
+        <pkg name="com.chaozh.iReaderFree" fps="50"/>
+        <pkg name="com.ea.games.nfs13_na" fps="55"/>
+        <pkg name="com.lenovo.email" fps="55"/>
+        <pkg name="com.fatian.HDFTNFSIII" fps="55"/>
+        <pkg name="com.skype.rover" fps="50"/>
+        <pkg name="com.skygame3.sh_uc_android.uc" fps="45"/>
+    </fps-pkglist>
+</perf-restrictions>
+

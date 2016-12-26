@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<iins>
+    <iin pattern="^898530" app_type="APPTYPE_RUIM" priority="5" network="7" mode="4" />
+    <iin pattern="^898530" app_type="APPTYPE_CSIM" priority="6" network="10" mode="4" />
+    <iin pattern="^(?!8986)" app_type="APPTYPE_SIM" priority="0" network="7" mode="5" />
+    <iin pattern="^(?!8986)" app_type="APPTYPE_USIM" priority="1" network="10" mode="5" />
+    <iin pattern="^898601" app_type="APPTYPE_SIM" priority="2" network="0" mode="5" />
+    <iin pattern="^898600" app_type="APPTYPE_SIM" priority="3" network="18" mode="5" />
+    <iin pattern="^898602" app_type="APPTYPE_SIM" priority="3" network="18" mode="5" />
+    <iin pattern="^898607" app_type="APPTYPE_SIM" priority="3" network="18" mode="5" />
+    <iin pattern="^898600" app_type="APPTYPE_USIM" priority="4" network="20" mode="5" />
+    <iin pattern="^898601" app_type="APPTYPE_USIM" priority="4" network="9" mode="5" />
+    <iin pattern="^898602" app_type="APPTYPE_USIM" priority="4" network="20" mode="5" />
+    <iin pattern="^898607" app_type="APPTYPE_USIM" priority="4" network="20" mode="5" />
+    <iin pattern="^898603" app_type="APPTYPE_RUIM" priority="5" network="7" mode="4" />
+    <iin pattern="^898603" app_type="APPTYPE_CSIM" priority="6" network="10" mode="4" />
+    <iin pattern="^898611" app_type="APPTYPE_CSIM" priority="6" network="10" mode="4" />
+</iins>
