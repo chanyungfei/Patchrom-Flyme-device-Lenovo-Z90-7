@@ -40,7 +40,7 @@ vendor_modify_images := boot
 # The default value is app or pri-app which not need to configure.
 # You can configure the directory name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-vendor_remove_dirs := media preload
+vendor_remove_dirs := media/audio preload
 
 ##############################################################################
 # The value decides the file which you want to remove in the vendor directory for the ota package.
@@ -61,7 +61,7 @@ vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider Backup
 		     LenovoGloveMode LenovoHighPerfMode LenovoScreenMode LenovoSmartScene LenovoSmartWifi \
 		     LenovoSchedulePowerOnOff LenovoSnapShot LeoDataSummary MaxxAudio MaxxService \
 		     QComQMIPermissions QCOMSettingsPlugin qcrilmsgtunnel RadioCode Runin-Assist Runin-Main \
-		     ScreenRecorderService shutdownlistener TimeService 
+		     ScreenRecorderService shutdownlistener SimSettings2 TimeService 
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -94,7 +94,7 @@ vendor_modify_jars := android.policy com.qti.dpmframework framework oem-services
 # You can configure the board system file path which relative to the system directory in the board release.
 # You should add "lib64/libwebviewchromium.so" for 64 bit system.
 #-----------------------------------------------------------------------------
-board_saved_files := lib/libwebviewchromium.so lib64/libwebviewchromium.so bin/bootanimation bin/shutdownanimation media/bootanimation.zip media/shutanimation.zip
+board_saved_files := lib/libwebviewchromium.so lib64/libwebviewchromium.so bin/shutdownanimation media/bootanimation.zip media/shutanimation.zip
 
 ##############################################################################
 # The value decides which board system apk you want to remove.
