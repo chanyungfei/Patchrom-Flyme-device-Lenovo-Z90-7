@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+
+    <!-- 双击放大的倍数 -->
+    <DoubleTapZoomIn>1.0</DoubleTapZoomIn>
+
+    <!-- 是否支持Watermark -->
+    <SupportWatermark>true</SupportWatermark>
+    
+</Root>
